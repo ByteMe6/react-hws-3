@@ -1,15 +1,15 @@
-import React from 'react';
-import ContactForm from './components/ContactForm/ContactForm';
-import ContactList from './components/ContactList/ContactList';
-import Filter from './components/Filter/Filter';
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import Tasks from "./components/ShowTasks";
 
-export default function App() {
+function App() {
   return (
-    <div className="app">
-      <h1>Книга контактів</h1>
-      <ContactForm />
-      <Filter />
-      <ContactList />
-    </div>
+    <Provider store={store}>
+      <>
+        <Tasks />
+      </>
+    </Provider>
   );
 }
+
+export default App;
