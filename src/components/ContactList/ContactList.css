@@ -1,0 +1,5 @@
+.contactList{list-style:none;padding:0;margin:0}
+.contactItem{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f0f0}
+.name{font-weight:600}
+.phone{font-size:0.9em;color:#555}
+button{padding:6px 10px;border-radius:6px;border:0;background:#ff6b6b;color:white;cursor:pointer}
